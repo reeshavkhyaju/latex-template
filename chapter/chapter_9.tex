@@ -1,0 +1,199 @@
+        \chapter{Actual Outcome}
+        \section{Desktop Outcome}
+       Our Actual outcome is some what inconsistent with what we expected in previous chapter. There was unnecessary lagging of processing and rendering with some of the extra buttons and tabs specified earlier in mockup design so, we decided to remove those from our UI.
+       Actual outcome has become much faster as we implemented multi thread programming to handle our TTS and DCT dillema. As for the screenshot of actual outcome main screen for viewing the ditection is shown below:
+        \begin{figure}[h]
+                \centering
+                \includegraphics[width=1\textwidth]{img/VV_actual.png}
+                \caption{Actual outcome of desktop App for dattatraya.mp4}    
+        \end{figure}
+        \pagebreak
+        \break
+        Here, We have only placed preview of each and every frames that has been equipped with bounding boxes and labeled with object name and track ID so that we can verify the detection as well as tracking progress.
+        \break
+        \section{Detection Evaluation Result}
+        \begin{table}[h]
+                \begin{tabular}{|c|c|c|c|c|c|c|}
+                       \hline 
+                       \textbf{Frame No.} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\ 
+                       \hline
+                        1 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        2 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        3 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        4 & 5 & 0 & 1 & 1 & 0.8333333333 & 0.9090909091 \\ 
+                       \hline
+                        5 & 5 & 0 & 1 & 1 & 0.8333333333 & 0.9090909091 \\ 
+                       \hline
+                        6 & 5 & 0 & 1 & 1 & 0.8333333333 & 0.9090909091 \\ 
+                       \hline
+                        7 & 5 & 0 & 1 & 1 & 0.8333333333 & 0.9090909091 \\ 
+                       \hline
+                        8 & 5 & 0 & 1 & 1 & 0.8333333333 & 0.9090909091 \\ 
+                       \hline
+                        9 & 4 & 1 & 1 & 0.8 & 0.8 & 0.8 \\ 
+                       \hline
+                        10 & 4 & 2 & 1 & 0.6666666667 & 0.8 & 0.7272727273 \\ 
+                       \hline
+                        11 & 4 & 1 & 2 & 0.8 & 0.6666666667 & 0.7272727273 \\ 
+                       \hline
+                        12 & 5 & 1 & 1 & 0.8333333333 & 0.8333333333 & 0.8333333333 \\ 
+                       \hline
+                        13 & 4 & 0 & 2 & 1 & 0.6666666667 & 0.8 \\ 
+                       \hline
+                        14 & 4 & 1 & 2 & 0.8 & 0.6666666667 & 0.7272727273 \\ 
+                       \hline
+                        15 & 5 & 1 & 1 & 0.8333333333 & 0.8333333333 & 0.8333333333 \\ 
+                       \hline
+                        16 & 5 & 1 & 1 & 0.8333333333 & 0.8333333333 & 0.8333333333 \\ 
+                       \hline
+                        17 & 4 & 2 & 2 & 0.6666666667 & 0.6666666667 & 0.6666666667 \\ 
+                       \hline
+                        18 & 4 & 0 & 1 & 1 & 0.8 & 0.8888888889 \\ 
+                       \hline
+                        19 & 4 & 2 & 1 & 0.6666666667 & 0.8 & 0.7272727273 \\ 
+                       \hline
+                        20 & 4 & 0 & 1 & 1 & 0.8 & 0.8888888889 \\ 
+                       \hline
+                        21 & 5 & 1 & 1 & 0.8333333333 & 0.8333333333 & 0.8333333333 \\ 
+                       \hline
+                        22 & 3 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        23 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        24 & 4 & 0 & 1 & 1 & 0.8 & 0.8888888889 \\ 
+                       \hline
+                        25 & 3 & 1 & 0 & 0.75 & 1 & 0.8571428571 \\ 
+                       \hline
+                        26 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                       \hline
+                        27 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                       \hline
+                        28 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        29 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                       \hline
+                        30 & 5 & 1 & 0 & 0.8333333333 & 1 & 0.9090909091 \\ 
+                       \hline
+                        31 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        32 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        33 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        34 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                       \hline
+                        35 & 4 & 2 & 1 & 0.6666666667 & 0.8 & 0.7272727273 \\ 
+                       \hline
+                       
+                \end{tabular}
+       \end{table} 
+       \begin{table} 
+                \begin{tabular}{|c|c|c|c|c|c|c|}
+                \hline 
+                \textbf{Frame No.} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\ 
+                \hline
+                        36 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        37 & 2 & 0 & 2 & 1 & 0.5 & 0.6666666667 \\ 
+                \hline
+                        38 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        39 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        40 & 3 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        41 & 4 & 0 & 2 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        42 & 4 & 0 & 3 & 1 & 0.5714285714 & 0.7272727273 \\ 
+                \hline
+                        43 & 3 & 1 & 3 & 0.75 & 0.5 & 0.6 \\ 
+                \hline
+                        44 & 3 & 0 & 3 & 1 & 0.5 & 0.6666666667 \\ 
+                \hline
+                        45 & 3 & 0 & 3 & 1 & 0.5 & 0.6666666667 \\ 
+                \hline
+                        46 & 4 & 0 & 1 & 1 & 0.8 & 0.8888888889 \\ 
+                \hline
+                        47 & 3 & 1 & 3 & 0.75 & 0.5 & 0.6 \\ 
+                \hline
+                        48 & 4 & 0 & 2 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        49 & 4 & 0 & 3 & 1 & 0.5714285714 & 0.7272727273 \\ 
+                \hline
+                        50 & 4 & 0 & 3 & 1 & 0.5714285714 & 0.7272727273 \\ 
+                \hline
+                        51 & 2 & 0 & 4 & 1 & 0.3333333333 & 0.5 \\ 
+                \hline
+                        52 & 3 & 0 & 3 & 1 & 0.5 & 0.6666666667 \\ 
+                \hline
+                        53 & 4 & 0 & 2 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        54 & 4 & 0 & 2 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        55 & 2 & 0 & 1 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        56 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        57 & 2 & 0 & 1 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        58 & 2 & 0 & 1 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        59 & 3 & 1 & 0 & 0.75 & 1 & 0.8571428571 \\ 
+                \hline
+                        60 & 3 & 1 & 0 & 0.75 & 1 & 0.8571428571 \\ 
+                \hline
+                        61 & 2 & 1 & 1 & 0.6666666667 & 0.6666666667 & 0.6666666667 \\ 
+                \hline
+                        62 & 2 & 0 & 1 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        63 & 2 & 0 & 1 & 1 & 0.6666666667 & 0.8 \\ 
+                \hline
+                        64 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        65 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        66 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        67 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        68 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        69 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        70 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        71 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        72 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        73 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        74 & 5 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        75 & 4 & 0 & 0 & 1 & 1 & 1 \\ 
+                \hline
+                        76 & 3 & 0 & 1 & 1 & 0.75 & 0.8571428571 \\ 
+                \hline
+                        Total &  &  &  & 0.9427631579 & 0.7898809524 & 0.8470513405 \\ 
+                \hline
+                \end{tabular}
+        \end{table} 
+        \section{MOT Evaluation Result}
+        \begin{figure}[h]
+                \centering
+                \includegraphics[width=1\textwidth]{img/mot_evaluation.png}
+                \caption{MOT evaluation result}    
+        \end{figure}
+        \section{Mobile Outcome}
+                \begin{center}
+                        \begin{figure}[h]
+                                \includegraphics[height=3.5in]{img/mobile1.jpg}
+                                \includegraphics[height=3.5in]{img/mobile2.jpg}
+                                \includegraphics[height=3.5in]{img/mobile3.jpg}
+                                \caption{Mobile Outcome}
+                        \end{figure}
+                \end{center}
+                

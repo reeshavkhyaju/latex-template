@@ -1,0 +1,23 @@
+    \chapter{Feasibility Study}
+        \section{Technical Feasibility}
+            We have used YOLO weights file as pretrained detection model and DEEP SORT for tracking so technically, we have no problems with model and datasets. Since we have used a smartphone to get video from camera as input, process them using GPU reinforced PC and used speaker for output so, this project is feasible.
+            
+        \section{Operational Feasibility}
+           Operation was done by using the pretrained model from YOLO v4 weights file and then using the Deep sort tracking mechanism for object tracking. We intended to deploy using the Android app in our next iteration of the project but in this first iteration we deployed our project into the desktop application using python GUI framework where, for testing phase we can use webcamera or any other IP camera or video then apply the project.\\
+           The main parts of our system are:
+           \subsection{Object Detection and Tracking}
+                Deployment of inference system on PC was quite easy due to use of YOLO-V4 pre trained module for detection and for tracking part, we have used Deep Sort algorithm which was pre defined and easy to implement. Integration and synchronization of these modules were quite difficult, but we manage to fix those difficulties.
+           \subsection{Text To Speech Module}
+               In context for the desktop application developed in python using the pyttsx3 package proved to be best and the engine used for this operation is espeak in ubuntu 18.04 LTS.
+               Without using multi threading programming there was a slight problem associated with the TTS module as it takes more time to speak the given text and at that time instance, GPU has to remain idle therefore, we implemented multi thread programming to address this problem. 
+               Use of multi thread programming made it possible for simultaneously doing TTS operations as well as video processing for the proper object detection and tracking as well.\\
+               With all the modules merged and connected to work together, our project for developing the Desktop application has been completed.
+
+        \section{Economic Feasibility}
+           The total expenditure of the project is in computational power. For computational power we are using YOLO V4 weights file and for computational power, we are using high end PC with RTX 2080Ti provided by College and also our own laptop. So, the project is economically feasible.
+
+        \section{Scheduling Feasibility}
+            Schedule we have managed to meet the deadline of project is mentioned in Gantt Chart at \ref*{fig:Gantt Chart} Schedule. Here is proper management of time as we can for this project is done. We have given almost top priority for the optimum analysis of the algorithm to get higher accuracy and testing of models. Documentation remains as important as any other task so throughout the whole project documenting each and every work will be continued. For this in every week we have developed the weekly report and in every meeting, minutes of that particular meeting is taken for the works to be done in next week.
+            Thus, within our time management skill we are ensured this project will be schedule feasible.
+
+
